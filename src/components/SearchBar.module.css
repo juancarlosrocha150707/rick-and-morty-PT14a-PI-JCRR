@@ -1,0 +1,23 @@
+.wrapperSearch {
+  justify-content: flex-end;
+}
+
+.wrapperSearch {
+  background-color: aqua;
+  display: flex;
+  padding: 10px 0;
+  background-size: 70px;
+  filter: opacity(0.7);
+  justify-content: flex-end;
+}
+.imput {
+  border-radius: 20px;
+  height: 30px;
+  padding: 10px;
+}
+.btn {
+  background: transparent;
+  border: none;
+  width: 0%;
+}
+

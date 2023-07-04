@@ -1,0 +1,35 @@
+.wrapperCard {
+  background-color: whitesmoke;
+  width: 320px;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.btn {
+  position: absolute; 
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: none;
+  background-color: red;
+}
+.name{
+    position: absolute;
+    width: 80%;
+    left: 0px;
+    bottom: 140px;
+    background-color: blue;
+    color: white;
+   
+
+}
