@@ -1,12 +1,23 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-// import style from "./NavBar.modules.css";
+import { Link } from "react-router-dom";
+
 const NavBar = (props) => {
-  const {onSearch} = props;
-  return <div>
-    <SearchBar onSearch = {onSearch}/>
-  </div>;
-}
+  const { onSearch } = props;
+
+  const handleRandomSearch = () => {
+    const randomId = Math.floor(Math.random() * 285) + 1;
+    onSearch(randomId);
+  };
+
+  return (
+    <div>
+      <Link to="/home">Home</Link>
+      <Link to="/about">About</Link>
+      <SearchBar onSearch={onSearch} />
+      <button onClick={handleRandomSearch}>Random</button>
+    </div>
+  );
+};
+
 export default NavBar;
-
-

@@ -1,23 +1,23 @@
 .wrapperSearch {
-  justify-content: flex-end;
-}
-
-.wrapperSearch {
   background-color: aqua;
   display: flex;
-  padding: 10px 0;
+  align-items: center;
+  padding: 10px;
   background-size: 70px;
   filter: opacity(0.7);
-  justify-content: flex-end;
 }
-.imput {
+
+.input {
   border-radius: 20px;
   height: 30px;
   padding: 10px;
+  margin-right: 10px; /* Agregado margin-right: 10px; para separar el input del botón */
 }
+
 .btn {
   background: transparent;
   border: none;
   width: 0%;
+  flex-shrink: 0; /* Agregado flex-shrink: 0; para evitar que el botón se reduzca */
 }
-
+ 

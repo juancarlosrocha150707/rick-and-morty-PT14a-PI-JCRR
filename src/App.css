@@ -4,5 +4,9 @@
    background-repeat: no-repeat;
    background-size: cover;
    width: 100vw;
-   height: 100vh;
+   height: 100vh; /* Cambiado a 100vh */
+   margin: 0; /* Agregado margin: 0; para eliminar el margen predeterminado del cuerpo de la página */
+   overflow: hidden; /* Agregado overflow: hidden; para evitar barras de desplazamiento si el contenido excede la pantalla */
+   padding: 0; /* Agregado padding: 0; para eliminar el relleno predeterminado del cuerpo de la página */
+   box-sizing: border-box; /* Agregado box-sizing: border-box; para incluir el relleno y el borde en las dimensiones totales del elemento */
 }
