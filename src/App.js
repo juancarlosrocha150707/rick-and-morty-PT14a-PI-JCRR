@@ -1,6 +1,7 @@
 //Commons import
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Favorites from "./components/Favorites/Favorites";
 //Css
 import "./App.css";
 //Components
@@ -71,6 +72,7 @@ function App() {
         />
         <Route path={PathRoutes.ABOUT} element={<About />} />
         <Route path={PathRoutes.DETAIL} element={<Detail />} />
+        <Route path={"/favorites"} element={<Favorites />} />
       </Routes>
     </div>
   );

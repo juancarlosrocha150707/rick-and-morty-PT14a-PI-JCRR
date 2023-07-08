@@ -14,6 +14,7 @@ const NavBar = (props) => {
     <div>
       <Link to="/home">Home</Link>
       <Link to="/about">About</Link>
+      <Link to="/favorites">Favorites</Link>
       <SearchBar onSearch={onSearch} />
       <button onClick={handleRandomSearch}>Random</button>
     </div>
