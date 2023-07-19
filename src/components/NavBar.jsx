@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
+import style from "./NavBar.module.css";
 
 const NavBar = (props) => {
   const { onSearch } = props;
@@ -12,11 +13,11 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Link to="/home">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/favorites">Favorites</Link>
+      <Link to="/home" className={`${style["navbar-link"]} ${style["neon-link"]}`}>Home</Link>
+      <Link to="/about" className={`${style["navbar-link"]} ${style["neon-link"]}`}>About</Link>
+      <Link to="/favorites" className={`${style["navbar-link"]} ${style["neon-link"]}`}>Favorites</Link>
       <SearchBar onSearch={onSearch} />
-      <button onClick={handleRandomSearch}>Random</button>
+      <button onClick={handleRandomSearch} className={`${style.button} ${style["neon-button"]}`}>Random</button>
     </div>
   );
 };

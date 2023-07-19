@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import styles from "./Detail.module.css";
+
 
 export const Detail = () => {
   const { id } = useParams();
@@ -19,13 +21,13 @@ export const Detail = () => {
     return setCharacter({});
   }, [id]);
   return (
-    <div>
+    <div className={styles["detail-container"]}>
+      <img src={character.image} alt="" />
       <h1>{character.name}</h1>
       <h1>{character.status}</h1>
       <h1>{character.species}</h1>
       <h1>{character.gender}</h1>
       <h1>{character.origin?.name}</h1>
-      <img src={character.image} alt="" />
     </div>
   );
 };

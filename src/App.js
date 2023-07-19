@@ -15,7 +15,7 @@ import { PathRoutes } from "./components/Helpers/Routes.helper";
 import Detail from "./components/Detail.jsx";
 
 const EMAIL = "juan@gmail.com";
-const PASSWORD = "Password12";
+const PASSWORD = "1234567";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -77,5 +77,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

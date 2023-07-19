@@ -1,7 +1,8 @@
 .wrapperSearch {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   align-items: center;
+  justify-content: center; /* Añadido justify-content: center; para centrar horizontalmente */
   padding: 10px;
   background-size: 70px;
   filter: opacity(0.7);
@@ -11,7 +12,14 @@
   border-radius: 20px;
   height: 30px;
   padding: 10px;
-  margin-right: 10px; /* Agregado margin-right: 10px; para separar el input del botón */
+  margin-right: 10px;
+  /* background-color: #e3e3ee;
+  box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 60px #0000ff; */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.input:focus {
+  background-color: #8edef7fb;
 }
 
 .btn {
@@ -20,4 +28,3 @@
   width: 0%;
   flex-shrink: 0; /* Agregado flex-shrink: 0; para evitar que el botón se reduzca */
 }
- 

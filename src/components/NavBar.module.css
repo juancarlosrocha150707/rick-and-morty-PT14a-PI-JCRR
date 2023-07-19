@@ -1,0 +1,30 @@
+.navbar-link {
+    color: aqua;
+    text-decoration: none;
+    margin-right: 100px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  
+  .navbar-link:hover {
+    color: #ff00f0;
+  }
+  
+  .button {
+    background-color: aqua;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    float: right;
+    margin-right: 10px;
+  }
+  
+  .button:hover {
+    background-color: #ff00f0;
+  }
+  
