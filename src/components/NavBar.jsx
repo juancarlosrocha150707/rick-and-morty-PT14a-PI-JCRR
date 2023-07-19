@@ -12,7 +12,7 @@ const NavBar = (props) => {
   };
 
   return (
-    <div>
+    <div className={style.container}>
       <Link to="/home" className={`${style["navbar-link"]} ${style["neon-link"]}`}>Home</Link>
       <Link to="/about" className={`${style["navbar-link"]} ${style["neon-link"]}`}>About</Link>
       <Link to="/favorites" className={`${style["navbar-link"]} ${style["neon-link"]}`}>Favorites</Link>

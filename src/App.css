@@ -1,6 +1,6 @@
 .App {
    /* text-align: center; */
-   background-image: url(./images/1375408-rick-and-morty-tv-series-4k-pc-wallpaper.jpg);
+   background-image: url("./images/1375408-rick-and-morty-tv-series-4k-pc-wallpaper.jpg");
    /* background-repeat: no-repeat;
    background-size: cover;
    width: 100vw;
@@ -12,7 +12,7 @@
 
    background-repeat: no-repeat;
    background-size: cover;
-   background-attachment: fixed;
+   background-attachment: fixed; 
       height: 5000px;
 
 }
