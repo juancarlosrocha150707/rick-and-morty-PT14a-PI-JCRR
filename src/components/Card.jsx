@@ -57,7 +57,7 @@ function Card(props) {
         <h2>{status}</h2>
         <h2>{species}</h2>
         <h2>{gender}</h2>
-        <h2>{origin && origin.name}</h2> {/* Verifica si origin existe antes de acceder a su propiedad */}
+        <h2>{origin && origin.name}</h2> 
       </div>
     </div>
   );

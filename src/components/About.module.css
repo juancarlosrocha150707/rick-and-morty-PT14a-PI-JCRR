@@ -1,0 +1,27 @@
+/* Estilos para el componente "About" */
+.about {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  animation: neonGlow 1s ease-in-out infinite alternate;
+  
+}
+
+/* Estilos para el párrafo */
+p {
+  text-align: justify;
+  text-align-last: center;
+}
+
+/* Animación "neonGlow" */
+@keyframes neonGlow {
+  from {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.9);
+  }
+}
