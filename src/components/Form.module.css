@@ -1,76 +1,82 @@
-/* FormStyles.module.css */
-
 .form-container {
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Use 'fixed' to position the container relative to the viewport */
+  top: 40%; /* Position from the top edge of the viewport */
+  left: 50%; /* Position from the left edge of the viewport */
+  transform: translate(-50%, -50%); /* Center the container using transforms */
+}
 
-/* 
-    width: 500px; */
-    
-    background-color: #fff;
-    background-image: url("../images/1.jpg"); /* Reemplaza "../path/to/background-image.jpg" con la ruta real de la imagen */
-    background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
-    background-position: center; /* Para centrar la imagen en el contenedor */
-    background-repeat: no-repeat; /* Para evitar que la imagen se repita */
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    min-height: 100vh;
-    /* height: 5000px;
-   */
 
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; */
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 330px;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 5px;
+
+  /* Neon effect */
+  box-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #007bff;
+  animation: neon-glow 1s ease-in-out infinite;
+}
+
+@keyframes neon-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #007bff;
   }
-  
-  
-  .form-label {
-    font-weight: bold;
-    margin-bottom: 5px;
+  50% {
+    box-shadow: 0 0 5px #0056b3, 0 0 10px #0056b3, 0 0 15px #0056b3;
   }
-  
-  .form-input {
-    width: 300px;
-    height: 30px;
-    margin-bottom: 15px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .form-error {
-    color: red;
-    margin-top: -10px;
-    margin-bottom: 15px;
-  }
-  
-  .form-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    /* Neon effect */
+}
+
+
+.form-error {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.form-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Neon effect */
+  box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
+  animation: neon-glow 1s ease-in-out infinite;
+  margin-top: 20px;
+  margin-left: 135px; 
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 10px #0056b3, 0 0 20px #0056b3, 0 0 30px #0056b3;
+}
+
+@keyframes neon-glow {
+  0%, 100% {
     box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
-    animation: neon-glow 1s ease-in-out infinite;
   }
-  
-  .form-button:hover {
-    background-color: #0056b3;
+  50% {
     box-shadow: 0 0 10px #0056b3, 0 0 20px #0056b3, 0 0 30px #0056b3;
   }
-  
-  @keyframes neon-glow {
-    0%, 100% {
-      box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
-    }
-    50% {
-      box-shadow: 0 0 10px #0056b3, 0 0 20px #0056b3, 0 0 30px #0056b3;
-    }
-  }
-  
+}

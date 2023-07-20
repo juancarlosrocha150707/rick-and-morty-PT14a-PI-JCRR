@@ -28,7 +28,7 @@ export const Form = (props) => {
       <form onSubmit={handleSubmit}>
         {/* username */}
         <label className={styles["form-label"]} htmlFor="email">
-          Username
+          {/* Username */}
         </label>
         <input
           type="text"
@@ -47,7 +47,7 @@ export const Form = (props) => {
         )}
         {/* password */}
         <label className={styles["form-label"]} htmlFor="password">
-          Password
+          {/* Password */}
         </label>
         <input
           type="password"
