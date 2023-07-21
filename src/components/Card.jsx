@@ -7,10 +7,10 @@ import { connect } from "react-redux";
 function Card(props) {
   const {
     name,
-    status,
-    species,
-    gender,
-    origin,
+    // status,
+    // species,
+    // gender,
+    // origin,
     image,
     onClose,
     id,
@@ -36,11 +36,9 @@ function Card(props) {
 
   return (
     <div className={style.wrapperCard}>
-      {isFav ? (
-        <button onClick={handleFavorite}>❤️</button>
-      ) : (
-        <button onClick={handleFavorite}>🤍</button>
-      )}
+     <button className={style.heartButton} onClick={handleFavorite}>
+              {isFav ? "❤️" : "🤍"}
+            </button>
       <button
         className={style.btn}
         onClick={() => {
@@ -50,15 +48,17 @@ function Card(props) {
         X
       </button>
       <img src={image} alt="character" />
-      <Link to={`/detail/${id}`}>
-        <h2 className={style.name}>{name}</h2>
-      </Link>
-      <div>
+       <div className={style.nameContainer}>
+          <Link to={`/detail/${id}`}>
+            <h2 className={style.name}>{name}</h2>
+          </Link>
+        </div>
+      {/* <div>
         <h2>{status}</h2>
         <h2>{species}</h2>
         <h2>{gender}</h2>
         <h2>{origin && origin.name}</h2> 
-      </div>
+      </div> */}
     </div>
   );
 }
@@ -79,5 +79,7 @@ const mapStateToProps = (state) => {
     myFavorites: state.myFavorites,
   };
 };
+
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(Card);

@@ -3,7 +3,7 @@
   /* Estilos existentes */
   background-color: whitesmoke;
   width: 320px;
-  height: auto;
+  height: 340px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -54,12 +54,32 @@
   position: absolute;
   width: 80%;
   left: 0px;
-  bottom: 140px;
+  bottom: 0px;
+  left: 10px;
+  border-radius: 10px;
   background-color: blue;
   color: white;
+}
+
+.nameContainer{
+  position: relative
+  bottom 0;
 }
 
 /* Cambiar el z-index al hacer hover */
 .wrapperCard:hover {
   z-index: 2;
+}
+
+.heartButton{
+   position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  font-size: 27px;
+  padding: 0;
+
 }

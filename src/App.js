@@ -54,6 +54,9 @@ function App() {
     navigate("/");
   };
 
+
+
+  
   return (
     <div className="App">
       {pathname !== "/" && <NavBar onSearch={onSearch} onLogout={logOut} />}

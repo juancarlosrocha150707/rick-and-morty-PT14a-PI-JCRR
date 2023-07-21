@@ -22,12 +22,16 @@ export const Detail = () => {
   }, [id]);
   return (
     <div className={styles["detail-container"]}>
-      <img src={character.image} alt="" />
+      <div className={styles.card}>
+      <img className={styles.img} src={character.image} alt="" />
+      <div className={styles.info}>
       <h1>{character.name}</h1>
       <h1>{character.status}</h1>
       <h1>{character.species}</h1>
       <h1>{character.gender}</h1>
       <h1>{character.origin?.name}</h1>
+        </div>
+        </div>
     </div>
   );
 };
