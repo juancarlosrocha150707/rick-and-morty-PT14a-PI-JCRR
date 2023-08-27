@@ -1,4 +1,3 @@
-
 // const express = require("express");
 // const server = express();
 // const router = require("./routes/index");
@@ -10,8 +9,12 @@
 // server.use(express.json());
 // server.use("/rickandmorty", router);
 
-const server = require("./app");
 const PORT = 3001;
-server.listen(PORT, () => {
-  console.log("Server raised in port: " + PORT);
+const server = require("./app");
+const { conn } = require("./DBconnection");
+
+conn.sync({ force: true }).then(() => {
+  server.listen(PORT, () => {
+    console.log("Server raised in port: " + PORT);
+  });
 });
